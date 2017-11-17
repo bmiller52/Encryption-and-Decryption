@@ -6,7 +6,7 @@ filename = 'encrypted.txt'
 
 def main():
 	if exists(filename):
-		print("reading...")
+		print("READING...")
 		print(' ')
         data = read_encrypted(filename).split(' ')
         for items in data:
@@ -53,5 +53,9 @@ print('Here\'s your song list:')
 
 for song in songs:
 	print('- ' + song)
+
+print(' ')
+print('WRITING...')
+print(' ')
 
 write_encrypted(filename)
